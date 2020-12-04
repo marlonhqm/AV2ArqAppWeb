@@ -1,0 +1,28 @@
+{
+  "name": "av2arqappweb",
+  "version": "1.0.0",
+  "description": "Projeto para Avaliação Final da disciplina de Arquitetura Web do curso de Sistemas de Informação do Centro Universitário Newton Paiva",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marlonhqm/AV2ArqAppWeb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marlonhqm/AV2ArqAppWeb/issues"
+  },
+  "homepage": "https://github.com/marlonhqm/AV2ArqAppWeb#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.3",
+    "nodemon": "^2.0.6"
+  }
+}

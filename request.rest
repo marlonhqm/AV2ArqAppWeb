@@ -1,0 +1,49 @@
+// GET Todos Posts
+GET http://localhost:3000/v1/post
+###
+
+//GET Post por ID
+GET http://localhost:3000/v1/post/5fc985a6f7d1ca3e9869f571
+###
+
+//GET Post por userId
+GET http://localhost:3000/v1/post/7aaf3db8-a8a8-475e-b97b-b7018fc56ef4
+###
+
+// CRIA Noco Post
+POST http://localhost:3000/v1/post
+Content-Type: application/json
+
+{
+  "userId": "7aaf3db8-a8a8-475e-b97b-b7018fc56ef4",
+  "conteudo": "texto do mesmo usuário",
+  "foto": "urlfoto3.com.br",
+  "status": "criado"
+
+}
+###
+
+// Atualiza recurso inteiro
+PUT http://localhost:3000/v1/post/5fc985a6f7d1ca3e9869f571
+Content-Type: application/json
+
+{
+  "userId": "59ab3fdf-3006-4705-8884-3ca7efc0cf7f",
+  "conteudo": "texto digitado",
+  "foto": "urlfoto.com",
+  "status": "criado"
+}
+###
+
+// DELETA recurso
+DELETE  http://localhost:3000/v1/post/5fc985fdf7d1ca3e9869f573
+###
+
+//Publica Recurso
+PATCH   http://localhost:3000/v1/post/5fc985a6f7d1ca3e9869f571
+Content-Type: application/json
+
+{
+  "status": "publicado"
+}
+###
